@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-chromedriver = YOUR_CHROMEDRIVER_PATH
+chromedriver = os.env("CHROMEDRIVER_HOME")
 
 driver = webdriver.Chrome(executable_path=chromedriver)
 driver.get("https://www.python.org/")
